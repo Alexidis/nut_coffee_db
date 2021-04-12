@@ -17,3 +17,15 @@ CREATE TABLE nut_coffee.providers
     COMMENT ='Поставщики';
 create index providers_name_idx on nut_coffee.providers (name);
 create index providers_address_idx on nut_coffee.providers (address);
+
+
+INSERT INTO nut_coffee.providers
+    (id, name, address, renew_user)
+VALUES
+    (1, 'Ростинг Брю', 'Москва, Переведеновский переулок, 18, стр. 15', '79155268598'),
+    (2, 'Cafeto', ' Москва, Иловайская ул. 20к1', '79155268598'),
+    (3, 'Кондитерская мануфактура', 'г. Москва, 5-я Кабельная ул, 10А.', '79155268598'),
+    (4, 'ТЕРРИТОРИЯ КОФЕ', 'Московская область Москва ул. Правды дом 17/19 Подробнее', '79155268598'),
+    (5, 'BarNeo', ' Россия, Москва, улица Сергия Радонежского, 15-17с24', '79155268598');
+
+

@@ -1,0 +1,23 @@
+drop function nut_coffee.remeasure;
+drop procedure nut_coffee.make_coffee;
+drop view nut_coffee.menus_view;
+drop view nut_coffee.recipes_view;
+drop view nut_coffee.stocks_view;
+drop trigger nut_coffee.clients_renew;
+drop trigger nut_coffee.goods_renew;
+drop trigger nut_coffee.providers_renew;
+drop trigger nut_coffee.recipes_renew;
+
+drop table nut_coffee.clients_orders;
+drop table nut_coffee.menus;
+drop table nut_coffee.stocks;
+drop table nut_coffee.recipe_ingredients;
+drop table nut_coffee.goods;
+drop table nut_coffee.providers;
+drop table nut_coffee.recipes;
+drop table nut_coffee.measurement_factors;
+drop table nut_coffee.measurement_units;
+drop table nut_coffee.clients;
+drop table nut_coffee.users;
+drop table nut_coffee.coffee_shops;
+drop schema nut_coffee;

@@ -13,3 +13,11 @@ CREATE TABLE nut_coffee.recipes
   DEFAULT CHARSET = utf8mb4
   COLLATE = utf8mb4_unicode_ci
     COMMENT ='Рецепты';
+
+insert into nut_coffee.recipes (id, name, description, author)
+values (1, 'Капучино', 'Кофейный напиток на основе эспрессо с добавлением молочной пены', 'ADMIN'),
+       (2, 'Американо', 'Разбавленный водой эспрессо', 'ADMIN'),
+       (3, 'Латте', 'кофейный напиток, состоящий из молока и эспрессо', 'ADMIN'),
+       (4, 'Капучино с ореховым сиропом', '', 'ADMIN'),
+       (5, 'Латте с ореховым сиропом', '', 'ADMIN'),
+       (6, 'Капучино с апельсиновым сиропом', '', 'ADMIN');
