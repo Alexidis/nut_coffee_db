@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>8d240cda-4f93-4bce-ba20-55d63b035108.SCHEMA:nut_coffee</OriginalElement>
+  <nodes>
+    <node x="225.2790405801142" y="6.756798215032774">8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.providers</node>
+    <node x="1025.6547637282365" y="461.5">8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.measurement_factors</node>
+    <node x="203.2790405801142" y="356.99999999999994">8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.goods</node>
+    <node x="648.8247803653604" y="461.0">8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.measurement_units</node>
+    <node x="861.9979311058237" y="-29.68857970414814">8d240cda-4f93-4bce-ba20-55d63b035108.VIEW:nut_coffee.recipes_view</node>
+    <node x="619.8247803653604" y="687.2445962906149">8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.stocks</node>
+    <node x="-217.08579379064741" y="1337.143076279459">8d240cda-4f93-4bce-ba20-55d63b035108.VIEW:nut_coffee.menus_view</node>
+    <node x="875.4979311058237" y="138.11176470588242">8d240cda-4f93-4bce-ba20-55d63b035108.VIEW:nut_coffee.stocks_view</node>
+    <node x="124.10598242922873" y="1337.143076279459">8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.menus</node>
+    <node x="353.95070422535207" y="1095.1322688606888">8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.coffee_shops</node>
+    <node x="-205.08579379064741" y="1025.9529058291082">8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.recipes</node>
+    <node x="135.60598242922873" y="1740.9283224097062">8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.clients</node>
+    <node x="353.95070422535207" y="806.0661344303444">8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.users</node>
+    <node x="145.60598242922873" y="1565.5356993445826">8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.clients_orders</node>
+    <node x="-261.0014261989581" y="582.9284618602705">8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.recipe_ingredients</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.stocks" target="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.goods" relationship="REFERENCES">
+      <point x="-126.0" y="4.0370938506839593E-4" />
+      <point x="361.45070422535207" y="758.745" />
+      <point x="32.17166364523786" y="163.0" />
+    </edge>
+    <edge source="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.recipe_ingredients" target="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.measurement_units" relationship="REFERENCES">
+      <point x="0.0" y="-71.5" />
+      <point x="-119.50142619895809" y="-36.0" />
+      <point x="745.8247803653604" y="-36.0" />
+      <point x="0.0" y="-59.0" />
+    </edge>
+    <edge source="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.clients_orders" target="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.menus" relationship="REFERENCES">
+      <point x="0.0" y="-58.5" />
+      <point x="0.0" y="85.0" />
+    </edge>
+    <edge source="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.menus" target="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.recipes" relationship="REFERENCES">
+      <point x="-15.0" y="-85.0" />
+      <point x="229.60598242922873" y="1136.9529058291082" />
+      <point x="104.0" y="0.0" />
+    </edge>
+    <edge source="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.recipe_ingredients" target="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.recipes" relationship="REFERENCES">
+      <point x="18.41563240831067" y="71.5" />
+      <point x="0.0" y="-111.0" />
+    </edge>
+    <edge source="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.users" target="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.coffee_shops" relationship="REFERENCES">
+      <point x="-4.0" y="111.0" />
+      <point x="0.0" y="-98.0" />
+    </edge>
+    <edge source="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.goods" target="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.measurement_units" relationship="REFERENCES">
+      <point x="126.0" y="0.0" />
+      <point x="-97.0" y="0.0" />
+    </edge>
+    <edge source="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.goods" target="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.providers" relationship="REFERENCES">
+      <point x="0.0" y="-163.00000000000006" />
+      <point x="0.0" y="136.99999999999997" />
+    </edge>
+    <edge source="8d240cda-4f93-4bce-ba20-55d63b035108.VIEW:nut_coffee.menus_view" target="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.menus" relationship="REFERENCES">
+      <point x="110.0" y="13.5" />
+      <point x="-120.5" y="0.0" />
+    </edge>
+    <edge source="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.stocks" target="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.coffee_shops" relationship="REFERENCES">
+      <point x="0.0" y="71.5" />
+      <point x="745.8247803653604" y="1193.1322688606888" />
+      <point x="116.5" y="0.0" />
+    </edge>
+    <edge source="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.stocks" target="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.measurement_units" relationship="REFERENCES">
+      <point x="2.1963463962038077E-4" y="-71.49959629061493" />
+      <point x="2.1963463962038077E-4" y="59.0" />
+    </edge>
+    <edge source="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.recipe_ingredients" target="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.goods" relationship="REFERENCES">
+      <point x="141.5" y="0.0" />
+      <point x="-126.0" y="134.42846186027055" />
+    </edge>
+    <edge source="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.menus" target="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.goods" relationship="REFERENCES">
+      <point x="0.0" y="-85.0" />
+      <point x="-84.67305815088548" y="163.0" />
+    </edge>
+    <edge source="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.measurement_factors" target="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.measurement_units" relationship="REFERENCES">
+      <point x="-145.5" y="-15.0" />
+      <point x="97.0" y="-15.0" />
+    </edge>
+    <edge source="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.clients_orders" target="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.clients" relationship="REFERENCES">
+      <point x="-5.0" y="58.5" />
+      <point x="0.0" y="-98.0" />
+    </edge>
+    <edge source="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.menus" target="8d240cda-4f93-4bce-ba20-55d63b035108.TABLE:nut_coffee.coffee_shops" relationship="REFERENCES">
+      <point x="113.0" y="-85.0" />
+      <point x="357.60598242922873" y="1444.8710148069572" />
+      <point x="470.45070422535207" y="1444.8710148069572" />
+      <point x="470.45070422535207" y="1291.1322688606888" />
+      <point x="-112.84472179612334" y="98.0" />
+    </edge>
+  </edges>
+  <settings layout="Channel" zoom="0.5618990384615382" showDependencies="false" x="241.50236866255977" y="905.8160427807491" />
+  <SelectedNodes>
+    <node>8d240cda-4f93-4bce-ba20-55d63b035108.VIEW:nut_coffee.menus_view</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+

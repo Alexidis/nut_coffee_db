@@ -13,3 +13,9 @@ CREATE TABLE nut_coffee.coffee_shops
   COLLATE = utf8mb4_unicode_ci
     COMMENT ='Кофейни';
 create index coffee_shops_name_idx on nut_coffee.coffee_shops (name);
+
+
+insert into nut_coffee.coffee_shops (name, address, admin_first_name, admin_last_name, admin_phone)
+values ('Фундук', 'г.Краснодар ул. Сормовская 43', 'Филипп', 'Синицын', 79615554321),
+       ('Арахис', 'г. Краснодар ул. Строителей 7', 'Артем', 'Есинов', 79194253252),
+       ('Кешью', 'г. Краснодар ул. Московская 15', 'Кирилл', 'Тартян', 79284753259);
